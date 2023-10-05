@@ -10,6 +10,7 @@ def home():
 def catagory():
     return render_template('catagory.html')
 
+
 @app.route('/contact')
 def contact():
     return '<h1>this is contact </h1>'
