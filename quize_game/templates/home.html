@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<header>
+    <div class="header">
+     <div class="heads headsx">
+       <div class="logo">
+         <img src="{{ url_for('static', filename='style/logo3.jpg') }}" alt="logo" class="logo" >      </div>
+    <!-- <img src="../static/style/logo3.jpg" alt="logo" class="logo"> -->
+    </div>
+       <div class="center">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Top Score</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Register</a></li>
+       <li><a href="#">Login</a></li>
+       <li><a href="#">About us</a></li>
+ 
+     </div>
+       <!-- <div class="right">
+         <!-- <img src="{{ url_for('static', filename='images/profile-circle-svgrepo-com.svg') }}"  class="profile" alt="logo">   -->
+         <!-- <img src="{{ url_for('static', filename='images/list-ul-alt-svgrepo-com.svg') }}"  class="list"  alt="logo">     -->
+      
+       </div> -->
+     </div>
+    
+     <div class="ply">
+       <div class="plys">
+         <h1>Welcome to the Ultimate Quiz Challenge!</h1>
+        <p>Test your knowledge and have fun with our interactive quiz game.</p>
+        <p>  Are you ready to become a trivia champion ?</p>
+         <button class="play"  id="show-popup">
+           Play Game
+        </button>
+       </div>
+     </div>
+     
+     <div class="pop" id="quiz-popup">
+      <div class="pops">
+          <h1>20-Minute Quiz Challenge</h1>
+
+          <p>Welcome to the 20-Minute Quiz Challenge! Put your knowledge to the test in the categories of Science, History, Technology, and Sports. Can you answer all the questions correctly within the next 20 minutes without leaving this page? Get ready to play and keep your phone handy!</p>
+          <div class="btns">
+            <a href="{{ url_for('catagory') }}"><button class="btn1">Play</button></a>
+              <button class="btn2">Cancel</button>
+          </div>
+      </div>
+  </div>
+
+    
+    
+   </div>
+    </div>
+    </header>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+.popx{
+    visibility: visible;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    top: 0;
+}
+.popx .popsx{
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+    background-color:  #082032;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.popx .popsx h1{
+    color: white;
+    font-weight: 600;
+}
+.popx .popsx ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.popx .popsx li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    height: 40px;
+    border: 1px solid white;
+}
+.popx .popsx li:hover{
+    background-color: #041421;
+}
+/* Add this CSS to highlight the selected category */
+.popx .popsx li.active {
+    background-color: #041421; /* Change to the desired background color */
+    color: white;
+}

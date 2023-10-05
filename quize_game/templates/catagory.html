@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Catagory
+{% endblock %}
+
+{% block content %}
+
+<header>
+    <div class="header">
+     <div class="heads headsx">
+       <div class="logo">
+         <img src="{{ url_for('static', filename='style/logo3.jpg') }}" alt="logo" class="logo" >      </div>
+    <!-- <img src="../static/style/logo3.jpg" alt="logo" class="logo"> -->
+    </div>
+       <div class="center">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Top Score</a></li>
+       <li><a href="#">Contact</a></li>
+       <li><a href="#">Register</a></li>
+       <li><a href="#">Login</a></li>
+       <li><a href="#">About us</a></li>
+ 
+    
+     </div> 
+     <div class="popx" id="quiz-popup">
+        <div class="popsx">
+            <h1>Choose Your Quiz Category</h1>
+            <ul id="category-list">
+                <li data-category="Sport">Sport</li>
+                <li data-category="History">History</li>
+                <li data-category="Biology">Biology</li>
+                <li data-category="Technology">Technology</li>
+                <li data-category="Chemistry">Chemistry</li>
+            </ul>
+            
+            <div class="btns">
+                <a href="{{ url_for('home') }}"><button class="btn2">Cancel</button></a>
+                <a href="{{ url_for('quize') }}"><button class="btn1" id="next-button" disabled>Next</button></a>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+    
+   </div>
+    </div>
+    </header>
+{% endblock %}

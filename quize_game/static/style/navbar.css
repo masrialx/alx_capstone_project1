@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+}
+.header{
+    overflow: hidden;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+   /* align-items: center; */
+    overflow: hidden;
+}
+header{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+ 
+    /* flex-direction: column; */
+   /* align-items: center; */
+    overflow: hidden;
+    background-image: url('./16183196_NEUMORPHIC_CIRCLES_BACKGROUND.jpg');
+}
+.list{
+    visibility: hidden;
+}
+.header .center a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+.header a:hover{
+    color: rgb(215, 52, 52);
+}
+.header .heads{
+  align-items: center;
+  position: relative;
+  /* bottom: 30px; */
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  height: 70%;
+}
+.header .heads .right{
+    visibility: hidden;
+    position: absolute;
+}
+.header .center{
+    overflow: hidden;
+    display: flex;
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    right: 10%;
+  
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.ply{
+    border: 1p solid white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ply .plys{
+    
+    bottom: 20%;
+    position: relative;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.ply .plys h1{
+    margin: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+.ply .plys p{
+    font-size: 20px;
+    color: wheat;
+    /* text-align: justify; */
+
+}
+.ply .plys .play{
+    margin-top: 30px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    /* transition: 0.7s; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ply .plys .play:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.pop{
+    visibility: hidden;
+    top: 0;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.pop .pops{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+    background-color:  #082032;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.pop h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+.pop p{
+    width: 90%;
+    text-align: justify;
+    color: whitesmoke;
+}
+.btns{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns .btn1{
+    background-color:  #030e17;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.btns .btn2{
+    background-color:  #730606;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border: 1px solid white;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.btns .btn2:hover{
+    background-color: transparent;
+}
+.btns .btn1:hover{
+    background-color: transparent;
+}
