@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Source Sans Pro;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    height: 400vh;
+}
+/* ///////////header/////////////////// */
+header{
+    width: 100%;
+    height: 90vh;
+    background-image: url('../image/bk2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.header .headers{
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    
+}
+
+.listbtn img{
+    visibility: hidden;
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    background-color: aliceblue;
+}
+.header .headers .list ul{
+    visibility: visible;
+    position: relative;
+    right: 50%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+.header .headers .list ul li{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.header .headers .list .login{
+    font-weight: 600;
+    font-size: 20px;
+    background-color:#07406e;
+    box-shadow: 0 0 5px 1px;
+    color: white;
+    width: 70px;
+    height: 40px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .headers .list .login:hover{
+    background-color:rgb(148, 11, 11);
+}
+.header .headers .list ul li:hover{
+    color: red;
+}
+
+
+
+/* ///////////////media screen//////////// */
+@media screen and (max-width:800px){
+    .listbtn img{
+        visibility: visible;
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        background-color: aliceblue;
+        top: 3%;
+        right: 5%;
+    }
+    .header .headers .list ul{
+        visibility: hidden;
+        width: 70%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+        position: fixed;
+        background-color: rebeccapurple;
+    }
+    .header .headers .list .login{
+        margin-top: 10%;
+        position: relative;
+        left: 40px;
+    }
+    .header .headers .list ul li{
+        position: relative;
+        top: 20px;
+        margin: 20px;
+        left: 60px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .header .headers .list ul li{
+        left: 40px;
+    }
+    .header .headers .list .login{
+        left: 20px;
+    }
+   
+}
