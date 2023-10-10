@@ -138,6 +138,7 @@ header .title .titles h1{
     align-items: center;
     flex-direction: column;
     background-color: #ccc;
+    /* cursor: pointer; */
 }
 
 /* Style for the search input field */
@@ -215,6 +216,18 @@ header .title .titles h1{
     flex-wrap: wrap;
     
 }
+.posts {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    align-items: center;
+}
+.posts .commx{
+    width: 30px;
+    height: 30px;
+}
+
 .data .datas .datax{
     width: 20%; 
     height: auto;
@@ -425,7 +438,7 @@ footer{
     .listbtn img{
         visibility: visible;
         position: absolute;
-        width: 50px;
+        width: 40px;
         height: 40px;
         background-color: aliceblue;
         top: 3%;

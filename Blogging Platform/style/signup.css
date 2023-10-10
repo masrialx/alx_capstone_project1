@@ -13,11 +13,18 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.reset{
+    height: 80vh;
+    
+}
+
 .signup-title {
     text-align: center;
     margin-bottom: 20px;
     color: #007BFF;
 }
+
 
 .signup-form label {
     display: block;

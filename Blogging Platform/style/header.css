@@ -41,7 +41,7 @@ header{
     position: absolute;
     width: 70px;
     height: 40px;
-    background-color: aliceblue;
+    
 }
 .header .headers .list ul{
     visibility: visible;
@@ -164,21 +164,6 @@ footer{
 }
 
 /* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .about-me {
-        order: 1; /* Reorder "About Me" section to appear before social icons on smaller screens */
-        padding-left: 0;
-        border-left: none;
-    }
-
-    .social-icons {
-        margin-top: 20px; /* Add spacing between social icons and "About Me" */
-    }
-}
 
 /* /////////title///////////////////// */
 
@@ -187,7 +172,7 @@ footer{
     .listbtn img{
         visibility: visible;
         position: absolute;
-        width: 50px;
+        width: 40px;
         height: 40px;
         background-color: aliceblue;
         top: 3%;
@@ -215,6 +200,23 @@ footer{
         left: 60px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .about-me {
+        order: 1; /* Reorder "About Me" section to appear before social icons on smaller screens */
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .social-icons {
+        margin-top: 20px; /* Add spacing between social icons and "About Me" */
+    }
+}
+
 
 @media screen and (max-width:450px){
     .header .headers .list ul li{

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/signup.css">
+    <link rel="stylesheet" href="style/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
+    <title>Login</title>
 </head>
 <body>
     <header>
@@ -31,28 +31,25 @@
 
     </header>
  
-    <main class="signup">
-        <div class="containers">
-            <h1>Signup</h1>
-            <form class="signup-form" id="signup-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-    
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-        
-               
-        
-                <input type="submit" value="Sign Up" class="signup-button" disabled>
-                <p class="sign-up-link">I have an account? <a href="login.html">Login</a></p>
-                
+    <main class="login">
+        <div class="containerz">
+            <h1 class="login-title">Forget Password</h1>
+            <form class="login-form" id="login-form">
+                <label for="username" class="login-label">Email:</label>
+                <input type="text" id="username" name="username" required class="login-input">
+                <br>
+                <input type="submit" value="Send" class="login-button">
             </form>
+    
+            <div class="login-success" id="login-success">
+                Login successful!
+            </div>
+    
+            <div class="login-failure" id="login-failure">
+                Login failed. Please check your credentials and try again.
+            </div>
+    
+            <p class="sign-up-link">I have an account? <a href="login.html"> Login</a></p>
         </div>
 
     </main>
@@ -78,8 +75,7 @@
         </div>
     </footer>
     
-    
+
     <script src="./script/home.js"></script>
-    <script src="./script/signup.js"></script>
 </body>
 </html>
